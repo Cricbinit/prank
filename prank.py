@@ -1,0 +1,16 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0, 0),pygame.FULLSCREEN)
+pygame.mixer.init()
+pygame.mixer.music.load('ratsasan.mp3.mp3')
+pygame.mixer.music.play()
+sleep(2)
+pygame.mixer.music.load('scary.mp3.mp3')
+pygame.mixer.music.play()
+sleep(1)
+pygame.mixer.init()
+image = pygame.image.load('robert-zunikoff-oK6VHjsnHys-unsplash (1) (3).jpg')
+window.blit(image,(0, 0))
+pygame.display.update()
+sleep(3)
